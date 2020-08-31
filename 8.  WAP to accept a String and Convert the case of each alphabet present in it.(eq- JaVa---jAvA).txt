@@ -1,0 +1,36 @@
+import java.util.*;
+class level1{
+    Scanner sn=new Scanner(System.in);
+   
+    void ok(){
+        String p=sn.nextLine();
+        char c;
+       int len=p.length();
+       for(int i=0;i<len;i++)
+       {
+            c=p.charAt(i);
+           if(Character.isUpperCase(c))
+           {
+               c=Character.toLowerCase(c);
+               
+           }
+           else if(Character.isLowerCase(c))
+           {
+               c=Character.toUpperCase(c);
+           }
+           System.out.print(c);
+       }
+       
+        
+        
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Enter the word");
+	level1 obj=new level1();
+		obj.ok();
+	}
+}
